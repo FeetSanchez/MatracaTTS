@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+
+# Build artifacts
+build/
+dist/
+*.spec
+*.exe
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Google Cloud version (do not publish)
+app-google.py
+chave-google.json
+GomezzTTS-GoogleCloud.spec
+build_exe.ps1
