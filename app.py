@@ -31,20 +31,6 @@ ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
 
-# ==============================================================
-# Vozes reais (Edge TTS) por idioma/locale
-#
-# Importante sobre “faixa etária”:
-# O Edge TTS/Voices do serviço não expõe um campo oficial e consistente
-# de idade (jovem/idoso) para a maioria dos idiomas.
-# Para cumprir o requisito sem inventar IDs, usamos vozes reais e mapeamos:
-# - “Jovem” como uma voz adulta que costuma soar mais leve/conversacional.
-# - “Envelhecida/Madura” como a voz adulta com timbre mais grave/autoridade.
-# Quando o idioma tem poucas opções (ex.: só 1 voz masculina), algumas
-# categorias apontam para o mesmo ID, e isso é documentado.
-#
-# “Infantil” só é incluído quando há pista oficial em tags (ex.: Cartoon/Cute).
-# ==============================================================
 
 VOICE_CATALOG = {
     # Português (Brasil)
