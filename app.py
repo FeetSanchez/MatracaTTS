@@ -1,3 +1,13 @@
+#  MatracaTTS - Gerador de Áudios Longos com edge-tts
+#  Copyright (C) 2025 FeetSanchez
+#
+#  Este programa é um software livre; você pode redistribuí-lo e/ou 
+#  modificá-lo sob os termos da Licença Pública Geral GNU conforme 
+#  publicada pela Free Software Foundation; tanto a versão 3 da 
+#  Licença, como (a seu critério) qualquer versão posterior.
+
+
+
 """MatracaTTS - Gerador de Áudios Longos com edge-tts.
 
 Aplicativo desktop em CustomTkinter para converter textos longos (com chunking)
@@ -267,6 +277,13 @@ class GeradorTTS(ctk.CTk):
         self._build_top_controls()
         self._build_audio_controls()
         self._build_status_and_text()
+
+        self.label_creditos = ctk.CTkLabel(
+            self,
+            text="MatracaTTS v1.0.2 | Licença GPL v3 | 2025",
+            font=("Arial", 10),
+        )
+        self.label_creditos.grid(row=7, column=0, sticky="s", pady=5)
 
         # Default selections
         first_lang = list(VOICE_CATALOG.keys())[0]
